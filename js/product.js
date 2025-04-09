@@ -11,7 +11,7 @@ fetch('products.json')
         <h2 class="text-2xl font-bold mb-2">${product.title}</h2>
         <p class="mb-4">${product.description}</p>
         <p class="text-orange-400 font-bold text-xl mb-4">${product.price} ₽</p>
-        <a href="${product.file}" download class="mr-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Скачать .skp</a>
+        <p class="text-sm text-gray-400 mb-4">После покупки напишите нам на <a href='mailto:your@email.com' class='underline text-blue-400'>email</a> или в <a href='https://t.me/your_telegram' target='_blank' class='underline text-blue-400'>Telegram</a> для получения файла.</p>
         <button onclick="addToCart(${product.id})" class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded">Купить</button>`;
     }
   });
