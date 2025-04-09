@@ -6,8 +6,19 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-white">
-  <header class="text-center py-6 text-3xl font-bold">Каталог компонентов</header>
-  <main class="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="catalog-list">
+  <header class="flex justify-between items-center p-4 bg-gray-900 text-white">
+    <a href="index.html" class="text-2xl font-bold hover:text-orange-400">3D Components</a>
+    <nav class="flex gap-6 text-lg">
+      <a href="index.html" class="hover:text-orange-400">Главная</a>
+      <a href="catalog.html" class="hover:text-orange-400">Каталог</a>
+      <a href="about.html" class="hover:text-orange-400">О нас</a>
+      <a href="cart.html" class="relative hover:text-orange-400">
+        🛒
+        <span id="cart-count" class="absolute -top-2 -right-2 bg-orange-500 text-white rounded-full px-2 text-sm">0</span>
+      </a>
+    </nav>
+  </header>
+    <main class="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="catalog-list">
     <!-- Здесь рендерятся все товары -->
   </main>
   <footer class="text-center text-gray-500 py-6">© 2025 Dynamic Components Store</footer>
