@@ -2,26 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Детали компонента</title>
+  <title>Информация о товаре</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-gray-900 text-white">
-  <header class="bg-gray-800 p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Все компоненты</h1>
-    <nav>
-      <a href="catalog.html" class="mr-4 text-orange-400 hover:underline">Каталог</a>
-      <a href="cart.html" class="text-orange-400 hover:underline">Корзина</a>
-    </nav>
-  </header>
-
-  <main class="p-6 max-w-4xl mx-auto">
-    <div id="product-details" class="bg-gray-800 p-6 rounded-xl shadow-xl">
-      <!-- Данные о компоненте будут загружены из JS -->
-    </div>
+  <header class="text-center py-6 text-3xl font-bold">Детали компонента</header>
+  <main class="max-w-3xl mx-auto p-4" id="product-details">
+    <!-- Данные товара загружаются product.js -->
   </main>
-
+  <footer class="text-center text-gray-500 py-6">© 2025 Dynamic Components Store</footer>
   <script src="js/product.js"></script>
 </body>
 </html>
