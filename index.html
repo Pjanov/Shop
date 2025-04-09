@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
-  <title>3D Компоненты для SketchUp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Все компоненты - Главная</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body class="bg-gray-900 text-white">
-  <header class="flex justify-between items-center p-4 bg-gray-900 text-white">
-    <div class="text-2xl font-bold">3D Components Store</div>
-    <nav class="flex gap-4 text-lg">
-      <a href="index.html" class="hover:text-orange-400">Главная</a>
-      <a href="catalog.html" class="hover:text-orange-400">Каталог</a>
-      <a href="about.html" class="hover:text-orange-400">О нас</a>
-      <a href="cart.html" class="relative hover:text-orange-400">
-        🛒
-        <span id="cart-count" class="absolute -top-2 -right-2 bg-orange-500 text-white rounded-full px-2 text-sm">0</span>
-      </a>
+  <header class="bg-gray-800 p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Все компоненты</h1>
+    <nav>
+      <a href="catalog.html" class="mr-4 text-orange-400 hover:underline">Каталог</a>
+      <a href="cart.html" class="text-orange-400 hover:underline">Корзина</a>
     </nav>
   </header>
-  <main class="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="product-list">
-    <!-- Здесь рендерятся товары из main.js -->
+
+  <main class="p-6">
+    <h2 class="text-xl mb-6">Популярные модели</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="product-list">
+      <!-- Продукты будут загружены через JS -->
+    </div>
   </main>
-  <footer class="text-center text-gray-500 py-6">© 2025 Dynamic Components Store</footer>
+
   <script src="js/main.js"></script>
 </body>
-
 </html>
